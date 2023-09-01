@@ -7,5 +7,10 @@
     width: 24px;
     height: 24px;
     background-image: url("/imagens/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
+}
+.conteiner_imagem{
+    padding: lem;
 }
