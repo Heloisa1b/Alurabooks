@@ -18,7 +18,7 @@
 .cabeçalho_menu{
     width: 24px;
     height: 24px;
-    background-image: url("./Menu.svg");
+    background-image: url("../Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -28,6 +28,7 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked ~ .lista-menu{
@@ -36,6 +37,7 @@
 
 .lista-menu_titulo{
     color: var(--laranja);
+    font-weight: 700;
 }
 .lista-menu_item{
     padding: 1em;
@@ -44,5 +46,10 @@
 .lista-menu_link{
     background: var(--azul-degrade);
     -webkit-background-clip: text;
-    
+    -webkit-text-fill-color: transparent;
+background-clip: text;
+text-transform: uppercase;
 }
+.container__botao {
+    display: none;
+    }
