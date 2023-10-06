@@ -4,23 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./styles/styles.css">
-        <link rel="stylesheet" href="./styles/reset.css">
-        <link rel="stylesheet" href="./styles/header.css">
-        <link rel="stylesheet" href="./styles/banner.css">
-        <link real="stylesheet" href="./styles/carrossel.css">
+        <link rel="stylesheet" href="Styles.css/styles.css">
+        <link rel="stylesheet" href="Styles.css/reset.css">
+        <link rel="stylesheet" href="Styles.css/header.css">
+        <link rel="stylesheet" href="Styles.css/banner.css">
+        <link real="stylesheet" href="Styles.css/carrossel.css">
         <link rel=”preconnect” href=”https://fonts.googleapis.com”>
         <link rel=”preconnect” href=”https://fonts.gstatic.com” crossorigin>
         <link href=”https://fonts.googleapis.com/ css2?family=Poppins:wght@300;400;500; 700&display=swap” rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AluraBooks</title>
-        <link rel="stylesheet" href=”reset.css”>
-        <link rel="preconnect" href=”https://fonts.googleapis.com”>
-        <link rel="preconnect" href=”https://fonts.gstatic.com” crossorigin>
         <link href="https://fonts.googleapis.com/css2?family="Poppins:wght@300;400;500;700&display=swap rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-        <link rel=”stylesheet” href="styles.css">
     </head>
     <body>
         <header class="cabeçalho">
@@ -47,13 +40,13 @@
                         <a href="#" class="lista-menu_link">Design & UX</a>
                     </li>
                 </ul>
-                <img src="./imagens alurabooks/Logo.svg" alt="Logo do Alurabooks" class="container_imagem">
+                <img src="./Imagens/Logo.svg" alt="Logo do Alurabooks" class="container_imagem">
             </div>
 
             <div class="container">      
-                <a href="#"><img src="./imagens alurabooks/Favoritos.svg" alt="Meus favoritos" class="container_imagem"></a>
-                <a href="#"><img src="./imagens alurabooks/Sacola.png" alt="Compras" class="container_imagem"></a>
-                <a href="#"><img src="./imagens alurabooks/Usuario.png" alt="Perfil" class="container_imagem"></a>        
+                <a href="#"><img src="./Imagens/Favoritos.svg" alt="Meus favoritos" class="container_imagem"></a>
+                <a href="#"><img src="./Imagens/Sacola.png" alt="Compras" class="container_imagem"></a>
+                <a href="#"><img src="./Imagens/Usuario.png" alt="Perfil" class="container_imagem"></a>        
             </div>
         </header>
         <section class="banner">
@@ -66,29 +59,44 @@
                 <h2 class="carrossel__titulo">Novos lançamentos</h2>
                 <div class="swiper">
                     <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper"></div>
+                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide"><img src="./Imagens/ApacheKafka.png" alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
+                    <div class="swiper-slide"><img src="./Imagens/Javascript.png" alt="Livro sobre JavaScript da AluraBooks"></div>
+                    <div class="swiper-slide"><img src="./Imagens/Portugol.png" alt="Livro sobre Portugol da AluraBooks"></div>
                     ...
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div><img src="./imagens alurabooks/img/ApacheKafka.png"alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
+                    <div class="swiper-pagination"></div>
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div><img src="./imagens alurabooks/img/Javascript.png" alt="Livro sobre JavaScript da AluraBooks"></div>
-                    <div class="swiper-button-next"></div><img src="./imagens alurabooks/img/Portugol.png" alt="Livro sobre Portugol da AluraBooks"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <!-- If we need scrollbar -->
                     <div class="swiper-scrollbar"></div>
+                    <div class="card">
+                        <div class="card__descricao"></div>
+                        <div class="descricao">
+                            <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                             <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
                     </div>
                 </section>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
                 <script>
-                    const swiper = new Swiper('.Swiper', {
+                    const swiper = new Swiper(".Swiper", {
                     spaceBetween: 10,
                     slidesPerView: 3,
                     speed: 400,
                     spaceBetween: 100,
-                    })
+                    pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                  },
+                });
                         </script>
 </html>

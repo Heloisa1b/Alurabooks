@@ -18,7 +18,7 @@
 .cabeçalho_menu{
     width: 24px;
     height: 24px;
-    background-image: url("../Menu.svg");
+    background-image: url("../Imagens/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -47,8 +47,8 @@
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-background-clip: text;
-text-transform: uppercase;
+    background-clip: text;
+    text-transform: uppercase;
 }
 .container__botao {
     display: none;
